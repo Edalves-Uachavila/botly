@@ -1,0 +1,153 @@
+
+
+
+.sign{
+
+    width: 100%;
+    margin: 20px auto;
+}
+
+.dashboard{
+    min-width: 350px;
+    max-width: 600px;
+    min-height: 500px;
+    margin: 10px auto;
+    border:whitesmoke;
+    border-style: solid;
+    
+}
+
+.dashboard> header{
+    display: flex;
+
+    background-color: #fff;
+}
+
+.dashboard> header> ul{
+    padding: 10px;
+    align-self: center;
+}
+
+.avatar{
+    width: 30px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.disclimer{
+    font-size: x-small;
+}
+
+
+.plano{
+    max-width: 795px;
+    margin: 10px auto;
+    padding:0px 15px;
+}
+
+.aderido{
+    width: 250px;
+    margin:5px auto;
+    border:rgb(33, 33, 209);
+    border-style: solid;
+}
+
+.plano> .line> li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.plano>h4, .payment> h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.payment{
+    width: 350px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.sucess-page{
+
+    max-width: 350px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sucess-page> .icon{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    color:#0d6efd;
+}
+
+.sucess-page> h4{text-align: center;}
+
+.payment-estatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 350px;
+    margin: 10px auto;
+}
+
+.payment-estatus> .table{
+
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+
+.payment-estatus> h4{text-align: center;}
+
+.payment-detalhe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    background-color: #fff;
+    margin: 10px auto;
+    width: 90%;
+}
+
+
+.payment-detalhe>  .valor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-detalhe> .valor>ul{
+    margin: 0px;
+}
+
+
+.payment-detalhe> .delete{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 780px) {
+
+	.line{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

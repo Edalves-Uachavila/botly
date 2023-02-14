@@ -1,0 +1,78 @@
+
+html, body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(236, 226, 226);
+}
+
+#root{
+    min-width: 350px;
+}
+
+hr{margin-bottom: 20px;}
+
+#navbar{
+    min-width: 350px;
+    max-width: 1380px;
+    background:black;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar> #logo> .logo{
+    width: 30px;
+}
+
+#navbar> ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#navbar> ul> li{margin: 0 20px;}
+#navbar> ul> li>a{text-decoration: none;}
+
+.footer{
+    background: black;
+}
+
+.App{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh;
+}
+
+.home{
+    background: grey;
+}
+
+
+/*ROMO FINDER*/
+.promofinder{
+    display: flex;
+    flex-direction: row;
+    height: vh;
+}
+
+.promofinder> div{padding: 10px;}
+.promofinder> .main>h2{margin-bottom: 50px;}
+
+
+.coupon-state> ul> p{
+    margin-right: 50px;
+    color: blue;
+}
+
+.coupon-state> ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .50px;
+}
