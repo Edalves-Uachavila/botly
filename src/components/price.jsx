@@ -1,5 +1,6 @@
 
 import { Button } from "react-bootstrap"
+import Navegacao from "./navegacao"
 import SimpleCard from "./simplecard"
 
 
@@ -20,7 +21,7 @@ export const Price = (props)=>{
                         </div>
                         
                     </ul>
-                    <Button style = {{width:"210px", marginTop:"10px"}}><a style = {{color:"whitesmoke", padding:"10px 70px"}} href = "/payment">Pagar</a></Button>
+                    <Navegacao text = "Pagar com e-Mola" para = "/payment"/>
                 </div>
             }
         />
