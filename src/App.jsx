@@ -2,7 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter , Routes, Route } from 'react-router-dom';
 
 import Navbar from './layout/navbar';
 
@@ -21,19 +21,19 @@ import VSL from './pages/vsl';
 
 function App(){
   return(
-    <Router>
+    <HashRouter>
       <Navbar/>
       <Routes>
-        <Route path='/vsl' element = {<VSL/>}/>
-        <Route path='/sign' element = {<Sign/>}/>
-        <Route path='/login' element = {<Login/>}/>
+        <Route path='#/vsl' element = {<VSL/>}/>
+        <Route path='#/sign' element = {<Sign/>}/>
+        <Route path='#/login' element = {<Login/>}/>
         <Route path='/' element = {<Dashboard/>}/>
-        <Route path='/payment' element = {<Payment/>}/>
-        <Route path='/sucess-page' element = {<SucessPage/>}/>
-        <Route path='/payment-estatus' element = {<PaymentEstatus/>}/>
-        <Route path='/plano' element = {<Plano/>}/>
+        <Route path='#/payment' element = {<Payment/>}/>
+        <Route path='#/sucess-page' element = {<SucessPage/>}/>
+        <Route path='#/payment-estatus' element = {<PaymentEstatus/>}/>
+        <Route path='#/plano' element = {<Plano/>}/>
       </Routes>
-    </Router>
+    </HashRouter>
   )
 }
 
