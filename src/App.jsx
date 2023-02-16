@@ -24,17 +24,15 @@ function App(){
     <HashRouter>
       <Navbar/>
       <Routes>
-        <Route path='#/vsl' element = {<VSL/>}/>
-        <Route path='#/sign' element = {<Sign/>}/>
-        <Route path='#/login' element = {<Login/>}/>
-        <Route path='vsl' element = {<VSL/>}/>
+        
+        <Route path='/vsl' element = {<VSL/>}/>
         <Route path='/sign' element = {<Sign/>}/>
         <Route path='/login' element = {<Login/>}/>
         <Route path='/' element = {<Dashboard/>}/>
-        <Route path='#/payment' element = {<Payment/>}/>
-        <Route path='#/sucess-page' element = {<SucessPage/>}/>
-        <Route path='#/payment-estatus' element = {<PaymentEstatus/>}/>
-        <Route path='#/plano' element = {<Plano/>}/>
+        <Route path='/payment' element = {<Payment/>}/>
+        <Route path='/sucess-page' element = {<SucessPage/>}/>
+        <Route path='/payment-estatus' element = {<PaymentEstatus/>}/>
+        <Route path='/plano' element = {<Plano/>}/>
       </Routes>
     </HashRouter>
   )
