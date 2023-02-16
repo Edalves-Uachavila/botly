@@ -27,6 +27,9 @@ function App(){
         <Route path='#/vsl' element = {<VSL/>}/>
         <Route path='#/sign' element = {<Sign/>}/>
         <Route path='#/login' element = {<Login/>}/>
+        <Route path='vsl' element = {<VSL/>}/>
+        <Route path='/sign' element = {<Sign/>}/>
+        <Route path='/login' element = {<Login/>}/>
         <Route path='/' element = {<Dashboard/>}/>
         <Route path='#/payment' element = {<Payment/>}/>
         <Route path='#/sucess-page' element = {<SucessPage/>}/>
