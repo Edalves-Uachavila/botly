@@ -6,6 +6,7 @@ import Select from '@mui/material/Select';
 
 
 import { useState } from 'react';
+import Navegacao from './navegacao';
 
 export const  NavLinks = ()=>{
 
@@ -33,10 +34,10 @@ export const  NavLinks = ()=>{
               value="portugyues"
               label="teste"
             >
-              <MenuItem value={"pt"}><a href = "/" style={{padding:"10px 65px", margin:"0px"}}>Home</a></MenuItem>
-              <MenuItem value={"pt"}><a href = "/plano" style={{padding:"10px 35px"}}>Aumentar Clicks</a></MenuItem>
-              <MenuItem value={"pt"}><a href = "/payment-estatus" style={{padding:"10px 8px"}}>Estado de pagamento</a></MenuItem>
-              
+              <MenuItem value={"pt"}><Navegacao text = "Home" para = "/"/></MenuItem>
+              <MenuItem value={"pt"}><Navegacao text = "Aumentar Clicks" para = "/plano"/></MenuItem>
+              <MenuItem value={"pt"}><Navegacao text = "Estado de pagamento" para = "/payment-estatus"/></MenuItem>
+          
             </Select>
           </FormControl>
         </div>
