@@ -21,10 +21,9 @@ import VSL from './pages/vsl';
 
 function App(){
   return(
-    <HashRouter>
+    <Router>
       <Navbar/>
       <Routes>
-        
         <Route path='/vsl' element = {<VSL/>}/>
         <Route path='/sign' element = {<Sign/>}/>
         <Route path='/login' element = {<Login/>}/>
@@ -34,7 +33,7 @@ function App(){
         <Route path='/payment-estatus' element = {<PaymentEstatus/>}/>
         <Route path='/plano' element = {<Plano/>}/>
       </Routes>
-    </HashRouter>
+    </Router>
   )
 }
 
