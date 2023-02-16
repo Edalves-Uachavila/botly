@@ -9,6 +9,7 @@ import { Navigate } from "react-router-dom"
 import Axios  from "axios"
 import { trackPromise } from "react-promise-tracker"
 import { LoadingIndicator } from "../components/loading"
+import Navegacao from "../components/navegacao"
 
 
 function Dashboard(){
@@ -64,7 +65,7 @@ function Dashboard(){
                         }
                     />
                 </div>
-                <Button style = {{width:"250px", marginTop:"25px"}} ><a style={{color:"whitesmoke", padding:"10px 30px"}} href = "/plano">Aumentar clicks</a></Button>
+                <Navegacao para = "/plano" text = "aumentar click c"/>
                 {token == null && <Navigate to = "/login"/>}
             </main>
         </div>
