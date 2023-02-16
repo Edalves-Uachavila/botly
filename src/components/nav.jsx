@@ -37,6 +37,7 @@ export const  NavLinks = ()=>{
               <MenuItem value={"pt"}><Navegacao text = "Home" para = "/"/></MenuItem>
               <MenuItem value={"pt"}><Navegacao text = "Aumentar Clicks" para = "/plano"/></MenuItem>
               <MenuItem value={"pt"}><Navegacao text = "Estado de pagamento" para = "/payment-estatus"/></MenuItem>
+              <MenuItem value={"pt"}><Navegacao text = "vsl" para = "/vsl"/></MenuItem>
           
             </Select>
           </FormControl>
