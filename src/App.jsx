@@ -24,7 +24,7 @@ function App(){
     <Router>
       <Navbar/>
       <Routes>
-        <Route path='/vsl' element = {<VSL/>}/>
+        <Route path='vsl' element = {<VSL/>}/>
         <Route path='/sign' element = {<Sign/>}/>
         <Route path='/login' element = {<Login/>}/>
         <Route path='/' element = {<Dashboard/>}/>
