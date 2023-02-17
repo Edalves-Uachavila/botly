@@ -13,7 +13,8 @@ import Sign from './pages/sign';
 import { Plano } from './pages/plano';
 import { SucessPage } from './pages/sucess';
 import { PaymentEstatus } from './pages/payment_estatus';
-import VSL from './pages/vsl';
+import { Termos } from './pages/termos';
+
 
 
 
@@ -24,7 +25,6 @@ function App(){
     <Router>
       <Navbar/>
       <Routes>
-        <Route path='/vsl' element = {<VSL/>}/>
         <Route path='/sign' element = {<Sign/>}/>
         <Route path='/login' element = {<Login/>}/>
         <Route path='/' element = {<Dashboard/>}/>
@@ -32,6 +32,7 @@ function App(){
         <Route path='/sucess-page' element = {<SucessPage/>}/>
         <Route path='/payment-estatus' element = {<PaymentEstatus/>}/>
         <Route path='/plano' element = {<Plano/>}/>
+        <Route path='/termos-e-condicoes' element = {<Termos/>}/>
       </Routes>
     </Router>
   )

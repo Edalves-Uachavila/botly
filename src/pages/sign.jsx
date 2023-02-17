@@ -3,7 +3,7 @@ import "./pages.css"
 
 import Axios from "axios"
 import { useState } from "react"
-import { Navigate } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 
 import { Button } from "react-bootstrap"
 import Cards from "../components/card"
@@ -11,6 +11,7 @@ import Input from "../components/input"
 
 import { trackPromise } from 'react-promise-tracker';
 import { LoadingIndicator } from "../components/loading"
+import Navegacao from "../components/navegacao"
 
 function Sign(){
     const [phone, setPhone] = useState("")
@@ -65,9 +66,9 @@ function Sign(){
                             placeholder = "Repita sua palavra passe"
                             onChange = {(e)=>{setSenha2(e.target.value);}}
                         />
-                        <p className="disclimer">Ao clicar em <strong>cadastrar</strong> confirma que leste os <a href="/termos">termos e condicoes</a> de uso</p>
+                        <p className="disclimer">Ao clicar em <strong>cadastrar</strong> confirma que leste os <Link to = "/termos-e-condicoes">Termos e Condições</Link> de uso</p>
                         <Button onClick = {cadastrar}>cadastrar</Button>
-                        <p>se ja tens uma conta faz <a href="/login">login aqui</a></p>
+                        <p>se ja tens uma conta faz <Link to = "/login">login aqui</Link></p>
                         {estado && <Navigate to = "/login"/>}
                         {!estado && <p style={{color:"red"}}>{mensage}</p>}
                     </div>

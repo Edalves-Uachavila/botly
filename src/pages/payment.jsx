@@ -70,6 +70,7 @@ function Payment(){
             />
             {!estado&&<p style={{color:"red", fontSize:"small"}}>{msg}</p>}
             {estado&& <Navigate to = "/sucess-page"/>}
+            {token == null && <Navigate to = "/login"/>}
             <Button onClick = {handlePayment}>Confirmar Pagamento</Button>
 
         </div>

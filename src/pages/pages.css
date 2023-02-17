@@ -7,6 +7,14 @@
     margin: 20px auto;
 }
 
+.termos{
+
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.termos> h5{text-align: center;}
+
 .dashboard{
     min-width: 350px;
     max-width: 600px;

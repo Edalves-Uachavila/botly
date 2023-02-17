@@ -5,8 +5,8 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 
-import { useState } from 'react';
-import Navegacao from './navegacao';
+import {useState} from 'react';
+import {Link} from 'react-router-dom';
 
 export const  NavLinks = ()=>{
 
@@ -34,11 +34,10 @@ export const  NavLinks = ()=>{
               value="portugyues"
               label="teste"
             >
-              <MenuItem value={"pt"}><Navegacao text = "Home" para = "/"/></MenuItem>
-              <MenuItem value={"pt"}><Navegacao text = "Aumentar Clicks" para = "/plano"/></MenuItem>
-              <MenuItem value={"pt"}><Navegacao text = "Estado de pagamento" para = "/payment-estatus"/></MenuItem>
-              <MenuItem value={"pt"}><Navegacao text = "vsl" para = "/vsl"/></MenuItem>
-          
+              <MenuItem value={"pt"}><Link to = "/">Home</Link></MenuItem>
+              <MenuItem value={"pt"}><Link to = "/plano">Aumentar Clicks</Link></MenuItem>
+              <MenuItem value={"pt"}><Link to = "/payment-estatus">Estados de pagamentos</Link></MenuItem>
+
             </Select>
           </FormControl>
         </div>

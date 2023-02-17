@@ -4,14 +4,16 @@ import "./pages.css"
 /*REACT HUKS ND MODULES*/
 import { useState } from "react"
 import Axios  from "axios"
-import { Navigate } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 
 /*My Components*/
 import { Button } from "react-bootstrap"
 import Cards from "../components/card"
 import Input from "../components/input"
-import { LoadingIndicator } from "../components/loading"
 
+import Navegacao from "../components/navegacao"
+
+import { LoadingIndicator } from "../components/loading"
 import { trackPromise } from 'react-promise-tracker';
 
 function Login(){
@@ -65,7 +67,7 @@ function Login(){
                             }}
                         />
                         <Button onClick = {sendLogin}>Login</Button>
-                        <p>se ainda nao tens uma conta, se cadastre <a href="/sign">aqui</a></p>
+                        <p>se ainda nao tens uma conta, se cadastre <Link to = "/sign">aqui</Link></p>
                         {estado&& <Navigate to = "/"/>}
                     </div>
                 }

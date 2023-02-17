@@ -2,19 +2,20 @@
 import { useEffect, useState } from "react"
 import "./pages.css"
 import Axios  from "axios"
-
+import { Navigate } from "react-router-dom"
 import {CgCloseR} from "react-icons/cg"
 import { trackPromise } from "react-promise-tracker"
 import { LoadingIndicator } from "../components/loading"
 
 const Payment = (props)=>{
 
+    
     const handledelete = ()=>{
         trackPromise(
             Axios.post("https://7p38fs.deta.dev/v1/delete-payment", {
                 "token": props.token,
                 "id_tranzacao": props.id
-            }).then((res)=>{window.location.reload()})
+            })
         )
     }
 
@@ -79,6 +80,8 @@ export const PaymentEstatus = ()=>{
                     )
                 })}
             </div>
+            {token == null && <Navigate to = "/login"/>}
         </div>
+        
     )
 }
