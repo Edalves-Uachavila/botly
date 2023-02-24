@@ -69,7 +69,6 @@ function Sign(){
                         <p className="disclimer">Ao clicar em <strong>cadastrar</strong> confirma que leste os <Link to = "/termos-e-condicoes">Termos e Condições</Link> de uso</p>
                         <Button onClick = {cadastrar}>cadastrar</Button>
                         <p>se ja tens uma conta faz <Link to = "/login">login aqui</Link></p>
-                        {estado && <Navigate to = "/login"/>}
                         {!estado && <p style={{color:"red"}}>{mensage}</p>}
                     </div>
                 }
