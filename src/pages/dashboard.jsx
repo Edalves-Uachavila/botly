@@ -66,7 +66,7 @@ function Dashboard(){
                     />
                 </div>
                 <Navegacao para = "/plano" text = "Aumentar click"/>
-                {token == null && <Navigate to = "/login"/>}
+                {token == null && <Navigate to = "/sign"/>}
             </main>
         </div>
     )
