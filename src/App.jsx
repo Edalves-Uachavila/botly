@@ -22,7 +22,7 @@ import { Termos } from './pages/termos';
 
 function App(){
   return(
-    <Router>
+    <HashRouter>
       <Navbar/>
       <Routes>
         <Route path='/sign' element = {<Sign/>}/>
@@ -34,7 +34,7 @@ function App(){
         <Route path='/plano' element = {<Plano/>}/>
         <Route path='/termos-e-condicoes' element = {<Termos/>}/>
       </Routes>
-    </Router>
+    </HashRouter>
   )
 }
 

@@ -34,9 +34,9 @@ export const  NavLinks = ()=>{
               value="portugyues"
               label="teste"
             >
-              <MenuItem value={"pt"}><Link to = "/">Home</Link></MenuItem>
-              <MenuItem value={"pt"}><Link to = "/plano">Aumentar Clicks</Link></MenuItem>
-              <MenuItem value={"pt"}><Link to = "/payment-estatus">Estados de pagamentos</Link></MenuItem>
+              <MenuItem value={"pt"}><Link to = "/" style={{padding:"10px 65px", margin:"0px"}}>Home</Link></MenuItem>
+              <MenuItem value={"pt"}><Link to = "/plano" style={{padding:"10px 35px"}} >Aumentar Clicks</Link></MenuItem>
+              <MenuItem value={"pt"}><Link to = "/payment-estatus" style={{padding:"10px 8px"}}>Estados de pagamentos</Link></MenuItem>
 
             </Select>
           </FormControl>
