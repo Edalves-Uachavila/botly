@@ -15,6 +15,8 @@ const Payment = (props)=>{
             Axios.post("https://7p38fs.deta.dev/v1/delete-payment", {
                 "token": props.token,
                 "id_tranzacao": props.id
+            }).then(()=>{
+                window.location.reload()
             })
         )
     }

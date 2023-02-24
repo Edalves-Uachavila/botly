@@ -15,7 +15,7 @@ export const Plano = ()=>{
             <div className="line">
                 <Price 
                     nome = "Basico" 
-                    price = "20MT"
+                    price = "25MT"
                     click = "200" 
                 />
                 <div className="aderido">
